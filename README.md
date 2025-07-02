@@ -23,11 +23,11 @@ Mendukung semua kebutuhan umum request — mirip `axios`, tapi jauh lebih ringan
 ## 📦 Instalasi
 
 ```bash
-npm install github:awenk/http-helper-api
+npm install github:badueny/http-helper-api
 ```
 Atau
 ```bash
-npm install git+https://github.com/awenk/http-helper-api.git
+npm install git+https://github.com/badueny/http-helper-api.git
 ```
 
 ##📚  Penggunaan
