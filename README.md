@@ -1,4 +1,4 @@
-# @awenk/http-helper
+# http-helper-api
 
 Minimalis dan fleksibel: helper HTTP untuk Node.js tanpa dependency eksternal.  
 Mendukung semua kebutuhan umum request — mirip `axios`, tapi jauh lebih ringan.
@@ -34,7 +34,7 @@ npm install git+https://github.com/awenk/http-helper-api.git
 🔹 request(url, options)
 Kirim request dan dapatkan { `statusCode`, `headers`, `body` }.
 ```js
-const { request } = require('@awenk/http-helper');
+const { request } = require('@awenk/http-helper-api');
 
 const res = await request('https://api.example.com/data', {
   method: 'POST',
@@ -49,7 +49,7 @@ console.log(res.body);       // object hasil JSON
 🔹 requestBodyOnly(url, options)
 Langsung dapat isi body saja dari response.
 ```js
-const { requestBodyOnly } = require('@awenk/http-helper');
+const { requestBodyOnly } = require('@awenk/http-helper-api');
 
 const data = await requestBodyOnly('https://api.example.com/info', {
   query: { year: 2025 }
@@ -61,7 +61,7 @@ console.log(data); // langsung object / array / string
 Kembalikan readable stream (untuk file besar) atau langsung simpan ke file jika outputFile diberikan.
 ```js
 const fs = require('fs');
-const { requestStream } = require('@awenk/http-helper');
+const { requestStream } = require('@awenk/http-helper-api');
 
 // Pipe ke file manual
 const stream = await requestStream('https://example.com/file.pdf');
@@ -90,7 +90,7 @@ await requestStream('https://example.com/image.jpg', {
 📦 Contoh: Download File sebagai Buffer
 ```js
 const fs = require('fs');
-const { requestBodyOnly } = require('@awenk/http-helper');
+const { requestBodyOnly } = require('@awenk/http-helper-api');
 
 const buffer = await requestBodyOnly('https://example.com/file.pdf', {
   responseType: 'buffer'
@@ -101,7 +101,7 @@ fs.writeFileSync('file.pdf', buffer);
 📦 Contoh: Proxy Stream ke Response Express
 ```js
 const express = require('express');
-const { requestStream } = require('@awenk/http-helper');
+const { requestStream } = require('@awenk/http-helper-api');
 
 const app = express();
 
