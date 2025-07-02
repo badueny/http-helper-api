@@ -1,0 +1,22 @@
+{
+  "name": "@awenk/http-helper-api",
+  "version": "1.0.0",
+  "description": "Minimal HTTP helper untuk GET/POST, query, buffer, streaming, auto file download",
+  "main": "index.js",
+  "type": "commonjs",
+  "keywords": [
+    "http",
+    "request",
+    "fetch",
+    "nodejs",
+    "stream",
+    "axios",
+    "helper"
+  ],
+  "author": "Awenk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awenk/http-helper-api.git"
+  }
+}
