@@ -114,7 +114,7 @@ app.get('/proxy-pdf', async (req, res) => {
 ```
 ---
 
-🛠 Dibuat oleh Awenk 📍 Indonesia
+🛠 Dibuat di 📍 Indonesia
 📄 Lisensi
 MIT License — bebas digunakan dan dimodifikasi.
 
