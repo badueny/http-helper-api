@@ -113,7 +113,7 @@ app.get('/proxy-pdf', async (req, res) => {
 });
 ```
 ---
-### Test
+
 ![Node.js CI](https://github.com/badueny/http-helper-api/actions/workflows/node-ci.yml/badge.svg)
 
 🛠 Dibuat di 📍 Indonesia
