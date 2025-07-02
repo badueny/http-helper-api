@@ -32,7 +32,7 @@ npm install git+https://github.com/awenk/http-helper-api.git
 
 ##📚  Penggunaan
 
-🔹 request(url, options)
+🔹 request(url, options)<br>
 Kirim request dan dapatkan { `statusCode`, `headers`, `body` }.
 ```js
 const { request } = require('@awenk/http-helper-api');
@@ -47,7 +47,7 @@ const res = await request('https://api.example.com/data', {
 console.log(res.statusCode); // 200
 console.log(res.body);       // object hasil JSON
 ```
-🔹 requestBodyOnly(url, options)
+🔹 requestBodyOnly(url, options)<br>
 Langsung dapat isi body saja dari response.
 ```js
 const { requestBodyOnly } = require('@awenk/http-helper-api');
@@ -58,7 +58,7 @@ const data = await requestBodyOnly('https://api.example.com/info', {
 
 console.log(data); // langsung object / array / string
 ```
-🔹 requestStream(url, options)
+🔹 requestStream(url, options)<br>
 Kembalikan readable stream (untuk file besar) atau langsung simpan ke file jika outputFile diberikan.
 ```js
 const fs = require('fs');
