@@ -1,4 +1,4 @@
-# http-helper-api
+# http-helper-api Node.js
 
 Minimalis dan fleksibel: helper HTTP untuk Node.js tanpa dependency eksternal.  
 Mendukung semua kebutuhan umum request — mirip `axios`, tapi jauh lebih ringan.
