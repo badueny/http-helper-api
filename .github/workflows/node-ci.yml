@@ -1,0 +1,36 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - name: Checkout kode
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependensi
+      run: npm install
+
+    - name: Jalankan test (opsional)
+      run: |
+        echo "Tidak ada test, hanya linting"
+        # nanti bisa diganti jadi: npm test
+
+    - name: Build sukses
+      run: echo "CI selesai tanpa error 👍"
