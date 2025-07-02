@@ -30,7 +30,8 @@ Atau
 npm install git+https://github.com/awenk/http-helper-api.git
 ```
 
-##📚  Penggunaan API
+##📚  Penggunaan
+
 🔹 request(url, options)
 Kirim request dan dapatkan { `statusCode`, `headers`, `body` }.
 ```js
