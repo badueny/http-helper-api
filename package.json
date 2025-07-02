@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Minimal HTTP helper untuk GET/POST, query, buffer, streaming, auto file download",
   "main": "index.js",
+  "scripts": {
+    "test": "node test/request.test.js"
+  },
   "type": "commonjs",
   "keywords": [
     "http",
