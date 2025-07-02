@@ -28,9 +28,7 @@ jobs:
       run: npm install
 
     - name: Jalankan test (opsional)
-      run: |
-        echo "Tidak ada test, hanya linting"
-        # nanti bisa diganti jadi: npm test
+      run: npm test
 
     - name: Build sukses
       run: echo "CI selesai tanpa error 👍"
